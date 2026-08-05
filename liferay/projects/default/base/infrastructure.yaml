@@ -1,0 +1,15 @@
+endpoints:
+    https:
+        port: 10443
+        protocol: HTTPS
+        tls:
+            mode: Terminate
+            certificateRefs:
+                -   kind: Secret
+                    name: liferay-tls-self-signed
+license:
+    externalSecretName: greenwald
+    targetSecretName: liferay-license
+search:
+    elasticsearch:
+        enabled: true
