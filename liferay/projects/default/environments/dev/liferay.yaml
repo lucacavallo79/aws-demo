@@ -1,0 +1,4 @@
+liferay-default:
+    portalProperties:
+        company.default.virtual.host.name: "k8s-envoygat-envoylif-cfe8bffb22-4f1b83d9a9a2baea.elb.us-east-1.amazonaws.com"
+
