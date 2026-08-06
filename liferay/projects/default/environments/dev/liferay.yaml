@@ -1,4 +1,5 @@
 liferay-default:
-    portalProperties:
-        company.default.virtual.host.name: "k8s-envoygat-envoylif-cfe8bffb22-4f1b83d9a9a2baea.elb.us-east-1.amazonaws.com"
-
+    customEnv:
+        x-virtual-host:
+            -   name: LIFERAY_COMPANY_PERIOD_DEFAULT_PERIOD_VIRTUAL_PERIOD_HOST_PERIOD_NAME
+                value: "k8s-envoygat-envoylif-cfe8bffb22-4f1b83d9a9a2baea.elb.us-east-1.amazonaws.com"
