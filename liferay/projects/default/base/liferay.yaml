@@ -13,6 +13,8 @@ liferay-default:
                         name: aws-s3-static-creds
     image:
         tag: 2026.q2.0
-network:
-    enabled: true
-    endpointRef: https
+    network:
+        enabled: true
+        forceHttpsRedirect: false
+        hostnames:
+            -   "k8s-envoygat-envoylif-cfe8bffb22-4f1b83d9a9a2baea.elb.us-east-1.amazonaws.com"
