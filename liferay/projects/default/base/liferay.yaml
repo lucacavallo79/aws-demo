@@ -1,4 +1,16 @@
 liferay-default:
+    customEnv:
+        x-aws-s3-static-creds:
+            -   name: AWS_ACCESS_KEY_ID
+                valueFrom:
+                    secretKeyRef:
+                        key: access_key_id
+                        name: aws-s3-static-creds
+            -   name: AWS_SECRET_ACCESS_KEY
+                valueFrom:
+                    secretKeyRef:
+                        key: secret_access_key
+                        name: aws-s3-static-creds
     image:
         tag: 2026.q2.0
 network:
